@@ -1,0 +1,37 @@
+{
+  "name": "html-auto-preview",
+  "version": "2.1.0",
+  "description": "Claude Code用HTML/SVG自動プレビューツール",
+  "main": "clipboard-watch.js",
+  "scripts": {
+    "start": "node clipboard-watch.js",
+    "watch": "node watch.js",
+    "build": "pkg clipboard-watch.js -t node18-win-x64 -o build/clipboard-watch.exe"
+  },
+  "keywords": [
+    "html",
+    "svg",
+    "preview",
+    "clipboard",
+    "browser",
+    "claude-code"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "clipboardy": "2.3.0",
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "scripts": [],
+    "assets": [
+      "node_modules/clipboardy/**/*.exe"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  }
+}

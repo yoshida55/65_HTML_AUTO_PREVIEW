@@ -1,0 +1,5 @@
+node_modules/
+build/clipboard-watch.exe
+*.zip
+*.log
+images/

@@ -1,0 +1,44 @@
+{
+  "name": "html-auto-detect",
+  "displayName": "HTML Auto Detect & Preview",
+  "description": "エディタ内のHTMLコードを自動検知して切り取り、ファイルとして保存する",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "HTML Auto Detect",
+      "properties": {
+        "htmlAutoDetect.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "HTML自動検知を有効にする"
+        },
+        "htmlAutoDetect.debounceMs": {
+          "type": "number",
+          "default": 3000,
+          "description": "AIの出力完了を待つ時間（ミリ秒）"
+        },
+        "htmlAutoDetect.outputDir": {
+          "type": "string",
+          "default": "",
+          "description": "HTML出力先ディレクトリ（空の場合はワークスペースルート）"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "htmlAutoDetect.toggle",
+        "title": "HTML Auto Detect: 有効/無効を切り替え"
+      },
+      {
+        "command": "htmlAutoDetect.extractNow",
+        "title": "HTML Auto Detect: 今すぐHTMLを抽出"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch.js 動作確認</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #0072ff;
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+        }
+        .status {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        .status h2 {
+            color: #2e7d32;
+            margin: 0 0 15px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .emoji {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="emoji">🎉</div>
+        <h1>ファイル監視型テスト成功！</h1>
+        <p>watch.js が正常に動作しています。</p>
+
+        <div class="status">
+            <h2>✅ 動作確認項目</h2>
+            <ul>
+                <li>✅ HTMLファイル新規作成検知</li>
+                <li>✅ ブラウザ自動起動</li>
+                <li>✅ chokidar 監視動作</li>
+                <li>✅ 除外パターン適用</li>
+            </ul>
+        </div>
+
+        <p><strong>Phase 2 完了！</strong></p>
+    </div>
+</body>
+</html>

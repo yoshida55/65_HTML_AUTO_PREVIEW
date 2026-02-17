@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch.js テスト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .status {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ ファイル監視型テスト成功！</h1>
+        <p>watch.js が正常に動作しています。</p>
+        <p><strong>更新テスト:</strong> ファイル変更も検知されます。</p>
+        <div class="status">
+            <strong>動作確認:</strong>
+            <ul>
+                <li>HTMLファイル作成検知 ✅</li>
+                <li>ブラウザ自動起動 ✅</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
