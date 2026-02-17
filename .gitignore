@@ -3,3 +3,4 @@ build/clipboard-watch.exe
 *.zip
 *.log
 images/
+.claude/settings.local.json
