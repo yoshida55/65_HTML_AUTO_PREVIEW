@@ -32,7 +32,7 @@ function readClipboard() {
       }
       if (code === 0) {
         const result = data.trim();
-        console.log(`📊 クリップボード読込: ${result.length}文字`);
+        // console.log(`📊 クリップボード読込: ${result.length}文字`);
         resolve(result);
       } else {
         console.error(`❌ PowerShell終了コード: ${code}`);

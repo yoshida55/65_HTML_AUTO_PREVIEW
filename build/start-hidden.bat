@@ -1,3 +1,3 @@
 @echo off
 cd /d "%~dp0"
-start /min "" ..\node\node.exe ..\clipboard-watch.js
+powershell -WindowStyle Hidden -Command "Start-Process '..\node\node.exe' -ArgumentList '..\clipboard-watch.js' -WindowStyle Hidden"
